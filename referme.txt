@@ -1,0 +1,61 @@
+(venv) PS D:\Insurance Firm Smart Contract> brownie run deploy.py --network polygon-test
+INFO: Could not find files for the given pattern(s).
+Brownie v1.19.3 - Python development framework for Ethereum
+
+InsuranceFirmSmartContractProject is the active project.
+Using private key from .env...
+0x237149564bafFa073b924963e5D79EDD59C16b70
+Transaction sent: 0xe9dd5332011e7b2d69e64cac761e4be0046a77e8e28745d4c47c11207648bfc8
+  Gas price: 3.080271395 gwei   Gas limit: 1950350   Nonce: 114
+  InsuranceContract.constructor confirmed   Block: 43831904   Gas used: 1773046 (90.91%)
+  InsuranceContract deployed at: 0xf0d1522e1b0D7C5024975C54eC76366c4D1f3A18
+----------------------------------------------
+(venv) PS D:\Insurance Firm Smart Contract> brownie run deploy.py submitDocument --network polygon-test
+INFO: Could not find files for the given pattern(s).
+Brownie v1.19.3 - Python development framework for Ethereum
+
+InsuranceFirmSmartContractProject is the active project.
+
+Running 'scripts\deploy.py::submitDocument'...
+0xB36D77D2d468D5af1972997D001AcDb7b140dF76
+Transaction sent: 0xde5503272350fa46c10424dfeebc7423af656b13085f32b4eb26d147978138e8
+  Gas price: 1.918323761 gwei   Gas limit: 373073   Nonce: 1
+  InsuranceContract.submitDocument confirmed   Block: 43835908   Gas used: 339158 (90.91%)
+----------------------------------------------
+
+(venv) PS D:\Insurance Firm Smart Contract> brownie run deploy.py grantAccess --network polygon-test   
+INFO: Could not find files for the given pattern(s).
+Brownie v1.19.3 - Python development framework for Ethereum
+
+InsuranceFirmSmartContractProject is the active project.
+
+Running 'scripts\deploy.py::grantAccess'...
+0xB36D77D2d468D5af1972997D001AcDb7b140dF76
+  Gas price: 1.787710015 gwei   Gas limit: 73827   Nonce: 3
+  InsuranceContract.grantAccess confirmed   Block: 43836608   Gas used: 67116 (90.91%)
+----------------------------------------------
+(venv) PS D:\Insurance Firm Smart Contract> brownie run deploy.py setAccessControl --network polygon-test
+INFO: Could not find files for the given pattern(s).
+Brownie v1.19.3 - Python development framework for Ethereum
+
+InsuranceFirmSmartContractProject is the active project.
+
+Running 'scripts\deploy.py::setAccessControl'...
+Using private key from .env...
+Transaction sent: 0x9d97408d5b0e53d17775f92e8e35b0818cd00b5b67ccf59d739288dcd1234e1f
+  Gas price: 1.999999999 gwei   Gas limit: 206912   Nonce: 116
+  InsuranceContract.setAccessControl confirmed   Block: 43838474   Gas used: 188102 (90.91%)
+----------------------------------------------
+(venv) PS D:\Insurance Firm Smart Contract> brownie run deploy.py accessDocument --network polygon-test
+INFO: Could not find files for the given pattern(s).
+Brownie v1.19.3 - Python development framework for Ethereum
+
+InsuranceFirmSmartContractProject is the active project.
+
+Running 'scripts\deploy.py::accessDocument'...
+0x2076F5F77B6b502358A34E1fCfedE3C871C4d1f9
+Transaction sent: 0xa429ee135755c31f72dc785d4baaac915f610d4d17167a38252fb5326c35b72f
+  Gas price: 1.802105384 gwei   Gas limit: 181322   Nonce: 3
+  InsuranceContract.accessDocument confirmed   Block: 43838822   Gas used: 164839 (90.91%)
+
+OrderedDict([('user', '0x2076F5F77B6b502358A34E1fCfedE3C871C4d1f9'), ('documentOwner', '0xB36D77D2d468D5af1972997D001AcDb7b140dF76'), ('timestamp', 1703170524), ('reason', 'View Claimed Insurance Policy'), ('documentHash', 'QmfZ95SEMNiRsBTUjcPJAns55An7MDTUtGw57CLZn7kfJu'), ('success', True)])
